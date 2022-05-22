@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="sidebars" style="display:block">
+            <ul class="nav">
+
+                <li id="home"><a href="home.html">HOME</a></li>
+
+                <li class="menu"><a href="about.html">ABOUT</a></li>
+                <li class="menu"><a href="news.html">NEWS</a></li>
+                <li class="menu"><a href="projects.html">PROJECTS</a></li>
+                <li class="menu"><a href="portfolio.html">PORTFOLIO</a></li>
+
+                <li id="searchBtn">
+                    <input type="button" class = "btn" value="SEARCH" 
+                    style="background-color: white; color: black;"
+                    onclick="onSearchBtn()">
+                </li>
+                
+                <li id="account"></li>
+            </ul>
+        </div>
+
+
+        <div id = "searchBox" >
+            <form method = "get" id = "searchform" autocomplete="off" action="">
+                <center><input type="text" id = "searchbar" placeholder="Type to search"></center>
+            </form>
+
+            <div class="searchBtn" style="display: flex; justify-content: flex-end;">
+                <input type="button" class = "btn" value="SEARCH"
+                style="background-color: rgb(51, 51, 51); color: white;
+                float : right; margin-top: 45px; margin-right: 40px;"
+                onClick="onSearchBtn()">
+            </div>
+        </div>
+    </div>
+
+
+     
+    <main>
+        <div id="catImgBox">
+
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div>
+            <ul class="bottom">
+                <li id="account"><input type="button" value="ACCOUNT" 
+                    style="background-color: white; color: black; border: none;"
+                    onclick="onAccountBtn()">
+                </li>
+            </ul>
+        </div>
+
+        <div id = "accountBox" >
+
+            <div class="accountBtn" style="display: flex; justify-content: flex-end;">
+                <input type="button" class = "btn" value="ACCOUNT"
+                style="background-color: rgb(51, 51, 51); color: white;
+                float : right; margin-top: 12px; margin-right: 15px;"
+                onClick="onAccountBtn()">
+            </div>
+
+            <form action="" class="login">
+                <br>
+                    <input type="text" name="id" class="int-area" autocomplete="off" required>
+                    <input type="password" name="pw" class="int-area" autocomplete="off" required>
+                <br>
+                    <button type="submit" id="loginBtn">LOGIN</button>
+                    <script>
+                        if(document.querySelector('loginBtn')){
+                            if(!document.querySelector('id') && !document.querySelector('pw'))
+                                lert('id 와 password를 입력해주세요.')
+                        }
+                    </script>
+            </form>
+
+            <br>
+            <div class="caption" style="text-align: center;">
+                <a href="#">Forgot ID / PW?</a><br>
+                <a href="signup/signup.html" id="signup">Sign up</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="searchbox.js"></script>
+    <script type="text/javascript" src="accountbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="randomCat.js"></script>
+
+</body>
+</html>

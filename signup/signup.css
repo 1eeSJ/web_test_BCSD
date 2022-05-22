@@ -1,0 +1,57 @@
+  * {
+      font-family: 'Noto Sans KR', sans-serif;
+      list-style: none;
+      text-decoration: none;
+      border-collapse: collapse;
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(51, 51, 51);
+  }
+
+
+  #infoBox {
+      border: 3px solid black;
+      top: 50%;
+      left: 50%;
+      width: 450px;
+      height: 590px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+  }
+
+  /*----------------------------------------*/
+
+  .information {
+      text-align: center;
+      top: 50%;
+      padding-top: 75px;
+      color: whitesmoke;
+
+      border-collapse: collapse;
+      margin: 0px;
+  }
+
+  .inputInfo {
+      width: 300px;
+      height: 30px;
+      background-color: rgb(40, 40, 40);
+      border-radius: 5px;
+      color: white;
+      margin-bottom: 5px;
+  }
+
+  .inputInfo:focus {
+      outline: none;
+      color: white;
+  }
+
+
+  /*----------------------------------------*/
+
+  .signUpBtn {
+      width: 300px;
+      height: 30px;
+      background-color: darkslategray;
+      color: whitesmoke;
+      border-radius: 5px;
+  }

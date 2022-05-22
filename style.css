@@ -1,0 +1,290 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* -------------------------------------------------------------- */
+a {
+    color: black;
+}
+
+.header {
+    width: auto;
+    text-align: left;
+}
+
+.nav {
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.menu {
+    font-size: smaller;
+    display: inline-block;
+    flex: 1;
+}
+
+.nav>#home {
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+    flex: 3;
+}
+
+.nav>#searchBtn {
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+    flex: 3;
+}
+
+.btn {
+    border: none;
+    font-size: 15px;
+}
+
+.sidebars {
+    position: fixed;
+    width: 100%;
+}
+
+/* -------------------------------------------------------------- */
+@keyframes exposeSearchBox {
+    from {
+        top: -200px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes exposeSearchBox {
+    from {
+        top: -200px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+
+@keyframes hideSearchBox {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -200px;
+    }
+}
+
+@-webkit-keyframes hideSearchBox {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -200px;
+    }
+}
+
+#searchBox {
+    height: 200px;
+    background-color: rgb(51, 51, 51);
+
+    width: 100%;
+    top: -200px;
+
+    position: absolute;
+    z-index: 10;
+}
+
+#searchBox.expose {
+    animation: exposeSearchBox ease-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#searchBox.hide {
+    animation: hideSearchBox ease-in 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+#searchform {
+    width: auto;
+    padding-top: 50px;
+}
+
+#searchbar {
+    text-align: center;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    border: none;
+    font-size: 50px;
+}
+
+#searchbar:focus {
+    outline: none;
+    color: white;
+}
+
+
+
+/* ----------------------------------------------- */
+
+
+main {
+    padding-top: 10%;
+}
+
+#catImgBox {
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 590px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* #canvas{
+    border: 3px solid black;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 590px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+} */
+
+
+/* ----------------------------------------------- */
+
+.bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+
+#theme {
+    padding-left: 20px;
+    float: left;
+}
+
+#account {
+    padding-right: 20px;
+    float: right;
+}
+
+
+/* ----------------------------------------------- */
+
+@keyframes exposeAccountBox {
+    from {
+        bottom: -280px;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+@-webkit-keyframes exposeAccountBox {
+    from {
+        bottom: -280px;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+
+@keyframes hideAccountBox {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: -280px;
+    }
+}
+
+@-webkit-keyframes hideAccountBox {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: -280px;
+    }
+}
+
+
+#accountBox {
+    height: 280px;
+    background-color: rgb(51, 51, 51);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    width: 300px;
+    right: 5px;
+    bottom: -300px;
+
+    position: fixed;
+}
+
+#accountBox.expose {
+    animation: exposeAccountBox ease-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#accountBox.hide {
+    animation: hideAccountBox ease-in 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*---------------------------------------------------*/
+
+.login {
+    text-align: center;
+    top: 50%;
+    padding-top: 15px;
+    color: whitesmoke;
+
+    border-collapse: collapse;
+    margin: 0px;
+}
+
+.int-area {
+    width: 200px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.int-area:focus {
+    outline: none;
+    color: white;
+}
+
+#loginBtn {
+    width: 200px;
+    background-color: darkslategray;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.caption>a {
+    color: whitesmoke;
+    font-size: smaller;
+}

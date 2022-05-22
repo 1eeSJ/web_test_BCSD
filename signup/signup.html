@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+<body>
+    <div class="container">
+    <a href="../home.html" style="color: white; display: inline-block; margin-left: 20px; margin-top: 10px;"> HOME </a>
+
+    <div id="infoBox">      
+        <h1 style="padding-top: 40px; color: white; text-align: center;">Create Account</h1>
+        <form action="" class="information">
+            <br>
+            <div class="int-area">
+                <input type="text" class = "inputInfo" name="name" placeholder = "Username" autocomplete="off" required>
+            </div>
+            <div class="int-area">
+                <input type="password" class = "inputInfo" name="pw" placeholder = "Password" autocomplete="off" required>
+            </div>
+            <div class="int-area">
+                <input type="password" class = "inputInfo" name="pw-check" placeholder = "Confirm Password" autocomplete="off" required>
+            </div>
+            <div class="int-area">
+                <input type="number" class = "inputInfo" name="student-number" placeholder = "Student number" autocomplete="off" required>
+            </div>
+            <div class="int-area">
+                <select class="inputInfo" name="major" >
+                    <option selected>Select major</option>
+                    <option value="1">기계공학과</option>
+                    <option value="2">메카트로닉스학과</option>
+                    <option value="3">산업경영학과</option>
+                    <option value="4">산업디자인학과</option>
+                    <option value="5">전기전자정보통신학과</option>
+                    <option value="6">컴퓨터공학과</option>
+                    <option value="7">화학공학과</option>                
+                </select>
+            </div>
+            <div class="int-area">
+                <input type="number" class = "inputInfo" name="phone-number" placeholder = "Phone number" autocomplete="off" required>
+            </div>
+            <br>
+            <br>
+
+            <div class="btn-area">
+                <button type="submit" class="signUpBtn">Sign up</button>
+            </div>
+            <div class="btn-area">
+                <button type="reset" class="signUpBtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
