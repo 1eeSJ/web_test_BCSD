@@ -1,4 +1,3 @@
-const button = document.querySelector('#cat');
 const url = 'https://api.thecatapi.com/v1/images/search?size=full';
 
 const getCatImage = function() {
